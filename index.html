@@ -8,6 +8,51 @@
     <title>Starbucks Clone</title>
 </head>
 <body>
-    
+    <main>
+        <div class="circulo"></div>
+        <header>
+            <!-- Logotipo -->
+            <a href="#"><img src="assets/logo.png" alt="Logo da empresa" class="logo"></a>
+
+            <!-- Div menu hamburguer -->
+             <div class="toogle" onclick="toogleMenu()"></div>
+             <ul class="links">
+                <li><a href="https://www.starbucks.com.br/" target="_blank">Home</a></li>
+                <li><a href="https://www.starbucks.com.br/" target="_blank">Menu</a></li>
+                <li><a href="https://www.starbucks.com.br/cafe" target="_blank">Novidades</a></li>
+                <li><a href="https://www.starbucks.com.br/lojas" target="_blank">Lojas</a></li>
+             </ul>
+        </header>
+         <!-- Conteudo pricipal -->
+        <div class="conteudo">
+            <div class="textoPrincipal">
+                <!-- titulo -->
+                 <h2>Não é apenas um café é: <br><span>Starbucks</span></h2>
+                 <!-- texto -->
+                  <p>Descubra um mundo de sabores inesquecíveis com a Starbucks.
+                    Cada colherada é uma explosão de sabores irresistíveis que vão te conquistar!</p>
+
+                  <!-- botão -->
+                <a href="https://starbucks.com.br/home" target="_blank">Veja mais</a>
+            </div>
+            <!-- imagem grande (copo) -->
+             <div class="imgBox"><img src="assets/img1.png" alt="copo" class="Starbucks"></div>
+        </div>
+
+        <!-- imagem copos pequenos -->
+         <ul class="sorvetes">
+            <li><img src="assets/thumb1.png" onclick="imgSlider ('assets/img1.png'); ChangeCircleColor(#017143)"></li>
+            <li><img src="assets/thumb2.png" onclick="imgSlider ('assets/img2.png'); ChangeCircleColor(#eb7495)"></li>
+            <li><img src="assets/thumb3.png" onclick="imgSlider ('assets/img3.png'); ChangeCircleColor(#d752b1)"></li>
+         </ul>
+
+         <!-- Lista redes sociais -->
+         <ul class="sociais">
+            <li><a href="https://www.facebook.com/" target="_blank"><img src="assets/facebook.png" alt="logo_facebook"></a></li>
+            <li><a href="https://www.threads.net/?hl=pt-br" target="_blank"><img src="assets/Threads.png" alt="logo_threads" id="threads"></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank"><img src="assets/instagram.png" alt="logo_instagram"></a></li>
+         </ul>
+    </main>
+
 </body>
 </html>
