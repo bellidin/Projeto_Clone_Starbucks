@@ -8,15 +8,17 @@
 
 /* padronização de cores */
 html {
+
     /* variáveis do css */
-    --CorPrimaria: #017143;
-    --CorSecundaria: #333;
-    --CorTerciaria: #fff;
+    --corPrimaria:#017143;
+
+    --corSecundaria: #333;
+
+    --corTerciaria: #fff;
 }
 
 /* Container principal */
-
-main {
+main{
     position: relative;
     width: 100%;
     min-height: 100vh;
@@ -24,14 +26,14 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--CorTerciaria);
+    background-color: var(--corTerciaria);
 }
 
 /* Header (cabeçalho) */
-header {
-    position: absolute;
-    top: 0;
-    left: 0;
+header{
+    position:absolute;
+    top:0;
+    left:0;
     width: 100%;
     padding: 20px 100px;
     display: flex;
@@ -39,24 +41,25 @@ header {
     align-items: center;
 }
 
-header .logo {
+header .logo{
     position: relative;
     max-width: 80px;
 }
-header .logo:hover {
+header .logo:hover{
     filter: invert(0.1);
 }
-header ul li {
+header ul li{
     list-style: none;
 }
-header ul {
+header ul{
     position: relative;
     display: flex;
 }
-header ul li a {
-    /* garante que o elemento seja renderizado em linha dentro do bloco */
+header ul li a{
+    /* garante que o elemento seja renderizado
+    em linha dentro do bloco */
     display: inline-block;
-    color: var(--CorSecundaria);
+    color: var(--corSecundaria);
     font-size: 20px;
     font-weight: 400;
     margin-left: 40px;
@@ -64,72 +67,74 @@ header ul li a {
     padding: 5px;
 }
 /* hover dos links do cabeçalho */
-header ul li a:hover {
-    background-color: var(--CorPrimaria);
-    color: var(--CorTerciaria);
+header ul li a:hover{
+    background-color: var(--corPrimaria) ;
+    color: var(--corTerciaria);
     border-radius: 7px;
 }
 
 /* conteúdo principal */
-.conteudo {
+.conteudo{
     position: relative;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.conteudo .textoPrincipal {
+.conteudo .textoPrincipal{
     position: relative;
+    /* limita o espaço do texto */
     max-width: 600px;
 }
 .conteudo .textoPrincipal h2 {
-    color: var(--CorSecundaria);
-    /* 1em= 1vez o tamanho da fonte de elemento */
-    /* 16px*2.5 = 40px */
+    color: var(--corSecundaria);
+    /* 1em = 1vez o tamanho da fonte do elemento */
+    /* 16px*2.5= 40px */
     font-size: 2.5em;
     /* espaçamento vertical da fonte */
     line-height: 1.5em;
     font-weight: 500;
 }
 .conteudo .textoPrincipal h2 span {
-    color: var(--CorPrimaria);
+    color: var(--corPrimaria);
     font-size: 1.2em;
     font-weight: 900;
 }
-.conteudo .textoPrincipal p {
-    color: var(--CorSecundaria);
+.conteudo .textoPrincipal p{
+    color: var(--corSecundaria);
 }
-.conteudo .textoPrincipal a {
+.conteudo .textoPrincipal a{
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 20px; 
     padding: 8px 20px;
-    background-color: var(--CorPrimaria);
-    color: var(--CorTerciaria);
+    background-color: var(--corPrimaria);
+    color: var(--corTerciaria);
     text-decoration: none;
     border-radius: 40px;
     font-weight: 500;
     letter-spacing: 1px;
 }
-.conteudo .textoPrincipal a:hover {
-    background-color: var(--CorSecundaria);
-    color: var(--CorTerciaria);
+.conteudo .textoPrincipal a:hover{
+    background-color: var(--corSecundaria);
+    color: var(--corTerciaria);
     border-radius: 40px;
     font-weight: 500;
     text-decoration: none;
 }
-/* imagem do copo grande */
-.conteudo .imgBox {
+
+/* imagem do copo grande 🍦 */
+.conteudo .imgBox{
     width: 600px;
     display: flex;
     justify-content: flex-end;
     padding-right: 50px;
     margin-top: 50px;
 }
-.conteudo .imgBox img {
+.conteudo .imgBox img{
     max-width: 340px;
 }
 
-/* copos menores */
+/* copos menores 🍦 */
 .sorvetes {
     position: absolute;
     left: 50%;
@@ -137,7 +142,7 @@ header ul li a:hover {
     transform: translateX(-50%);
     display: flex;
 }
-.sorvetes li {
+.sorvetes li{
     list-style: none;
     display: inline-block;
     margin: 0 20px;
@@ -145,14 +150,14 @@ header ul li a:hover {
     transition: 0.5s;
 }
 .sorvetes li:hover {
-    transform: translateX(-15px);
+    transform: translateY(-15px);
 }
-.sorvetes li img {
+.sorvetes li img{
     max-width: 60px;
 }
 
 /* redes sociais */
-.sociais {
+.sociais{
     position: absolute;
     top: 50%;
     right: 30px;
@@ -165,49 +170,50 @@ header ul li a:hover {
 .sociais li {
     list-style: none;
 }
-#threads {
+#threads{
     height: 40px;
 }
-
-.sociais li a {
-    display: inline-block;
+.sociais li a{
+    display:inline-block;
     margin: 5px 0;
     /* altera a escala de tamanho */
     transform: scale(0.6);
+    /* inverte a cor para branco */
     filter: invert(1);
 }
-.sociais li a:hover {
-    color: var(--CorSecundaria);
+.sociais li a:hover{
+    color: var(--corSecundaria);
     filter: invert(0);
 }
 
 /* circulo */
-.circulo {
+.circulo{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    background: var(--CorPrimaria);
-/* tamanho --> lado --> posição */
+    height:100%;
+    background: var(--corPrimaria);
+
+    /* tamanho --> lado --> posição */
     clip-path: circle(600px at right 800px);
 }
 
-/* ***Responsividade*** */
-@media (max-width: 992px) {
-    header {
+/* ******Responsividade******** */
+@media (max-width: 992px){
+    header{
         padding: 20px;
     }
-    header .logo {
+    header .logo{
         max-width: 60px;
     }
-    header ul {
+    header ul{
         /* oculta a exibição da lista */
         display: none;
     }
 
     /* menu hambúrguer */
-    .toggle {
+    .toggle{
         position: relative;
         width: 30px;
         height: 30px;
@@ -219,23 +225,24 @@ header ul li a:hover {
         background-repeat: no-repeat;
         filter: invert(1);
         z-index: 11;
-    }
-    .toggle.active {
+    }    
+    .toggle.active{
         position: fixed;
         right: 20px;
-        /* preenchido com a imagem de fechar */
+        /* preenchido com a imagem de 'fechar' */
         background: url(assets/close.png);
         background-size: 25px;
         background-position: center;
         background-repeat: no-repeat;
     }
-    /* formar a lista do menu hambúrguer */
+
+    /* formar a lista do menu hamburguer */
     header ul.links.active {
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
-        height: 40%;
+        height: 45%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -246,8 +253,9 @@ header ul li a:hover {
         font-size: 1.5em;
         margin: 5px 0;
     }
-     /* Conteúdo */
-     main {
+
+    /* Conteúdo */
+    main {
         padding: 20px 20px 120px;
     }
 
